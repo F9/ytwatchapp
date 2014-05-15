@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6F5386018563127005A2237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F5385F18563127005A2237 /* Foundation.framework */; };
+		C6F5386218563127005A2237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F5386118563127005A2237 /* CoreGraphics.framework */; };
+		C6F5386418563127005A2237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F5386318563127005A2237 /* UIKit.framework */; };
+		C6F5386A18563127005A2237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F5386818563127005A2237 /* InfoPlist.strings */; };
+		C6F5386C18563127005A2237 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5386B18563127005A2237 /* main.m */; };
+		C6F5387018563127005A2237 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5386F18563127005A2237 /* AppDelegate.m */; };
+		C6F5387318563127005A2237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F5387118563127005A2237 /* Main.storyboard */; };
+		C6F5387618563127005A2237 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5387518563127005A2237 /* MasterViewController.m */; };
+		C6F5387918563127005A2237 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5387818563127005A2237 /* DetailViewController.m */; };
+		C6F5387B18563128005A2237 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F5387A18563128005A2237 /* Images.xcassets */; };
+		C6F5388218563128005A2237 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F5388118563128005A2237 /* XCTest.framework */; };
+		C6F5388318563128005A2237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F5385F18563127005A2237 /* Foundation.framework */; };
+		C6F5388418563128005A2237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F5386318563127005A2237 /* UIKit.framework */; };
+		C6F5388C18563128005A2237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F5388A18563128005A2237 /* InfoPlist.strings */; };
+		C6F5388E18563128005A2237 /* ytwatchappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5388D18563128005A2237 /* ytwatchappTests.m */; };
+		C6F5389918563163005A2237 /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5389818563163005A2237 /* FeedModel.m */; };
+		C6F538B7185638B2005A2237 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5389B185638B2005A2237 /* MKAnnotationView+WebCache.m */; };
+		C6F538B8185638B2005A2237 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5389D185638B2005A2237 /* NSData+GIF.m */; };
+		C6F538B9185638B2005A2237 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5389F185638B2005A2237 /* SDImageCache.m */; };
+		C6F538BA185638B2005A2237 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538A1185638B2005A2237 /* SDWebImageCompat.m */; };
+		C6F538BB185638B2005A2237 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538A3185638B2005A2237 /* SDWebImageDecoder.m */; };
+		C6F538BC185638B2005A2237 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538A5185638B2005A2237 /* SDWebImageDownloader.m */; };
+		C6F538BD185638B2005A2237 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538A7185638B2005A2237 /* SDWebImageDownloaderOperation.m */; };
+		C6F538BE185638B2005A2237 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538A9185638B2005A2237 /* SDWebImageManager.m */; };
+		C6F538BF185638B2005A2237 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538AC185638B2005A2237 /* SDWebImagePrefetcher.m */; };
+		C6F538C0185638B2005A2237 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538AE185638B2005A2237 /* UIButton+WebCache.m */; };
+		C6F538C1185638B2005A2237 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538B0185638B2005A2237 /* UIImage+GIF.m */; };
+		C6F538C2185638B2005A2237 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538B2185638B2005A2237 /* UIImage+MultiFormat.m */; };
+		C6F538C3185638B2005A2237 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538B4185638B2005A2237 /* UIImage+WebP.m */; };
+		C6F538C4185638B2005A2237 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538B6185638B2005A2237 /* UIImageView+WebCache.m */; };
+		C6F538C718563B1F005A2237 /* iframe.html in Resources */ = {isa = PBXBuildFile; fileRef = C6F538C618563B1F005A2237 /* iframe.html */; };
+		C6F538CA1856412D005A2237 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F538C91856412D005A2237 /* VideoModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6F5388518563128005A2237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6F5385418563127005A2237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6F5385B18563127005A2237;
+			remoteInfo = ytwatchapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6F5385C18563127005A2237 /* ytwatchapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ytwatchapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F5385F18563127005A2237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6F5386118563127005A2237 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C6F5386318563127005A2237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C6F5386718563127005A2237 /* ytwatchapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ytwatchapp-Info.plist"; sourceTree = "<group>"; };
+		C6F5386918563127005A2237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6F5386B18563127005A2237 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6F5386D18563127005A2237 /* ytwatchapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ytwatchapp-Prefix.pch"; sourceTree = "<group>"; };
+		C6F5386E18563127005A2237 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6F5386F18563127005A2237 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6F5387218563127005A2237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6F5387418563127005A2237 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		C6F5387518563127005A2237 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		C6F5387718563127005A2237 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C6F5387818563127005A2237 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C6F5387A18563128005A2237 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6F5388018563128005A2237 /* ytwatchappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ytwatchappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F5388118563128005A2237 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C6F5388918563128005A2237 /* ytwatchappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ytwatchappTests-Info.plist"; sourceTree = "<group>"; };
+		C6F5388B18563128005A2237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6F5388D18563128005A2237 /* ytwatchappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ytwatchappTests.m; sourceTree = "<group>"; };
+		C6F5389718563163005A2237 /* FeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedModel.h; path = ytwatchapp/FeedModel.h; sourceTree = "<group>"; };
+		C6F5389818563163005A2237 /* FeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedModel.m; path = ytwatchapp/FeedModel.m; sourceTree = "<group>"; };
+		C6F5389A185638B2005A2237 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		C6F5389B185638B2005A2237 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		C6F5389C185638B2005A2237 /* NSData+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GIF.h"; sourceTree = "<group>"; };
+		C6F5389D185638B2005A2237 /* NSData+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GIF.m"; sourceTree = "<group>"; };
+		C6F5389E185638B2005A2237 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		C6F5389F185638B2005A2237 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		C6F538A0185638B2005A2237 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		C6F538A1185638B2005A2237 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		C6F538A2185638B2005A2237 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		C6F538A3185638B2005A2237 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		C6F538A4185638B2005A2237 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		C6F538A5185638B2005A2237 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		C6F538A6185638B2005A2237 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		C6F538A7185638B2005A2237 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		C6F538A8185638B2005A2237 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		C6F538A9185638B2005A2237 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		C6F538AA185638B2005A2237 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		C6F538AB185638B2005A2237 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		C6F538AC185638B2005A2237 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		C6F538AD185638B2005A2237 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		C6F538AE185638B2005A2237 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		C6F538AF185638B2005A2237 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		C6F538B0185638B2005A2237 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		C6F538B1185638B2005A2237 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		C6F538B2185638B2005A2237 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		C6F538B3185638B2005A2237 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		C6F538B4185638B2005A2237 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		C6F538B5185638B2005A2237 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		C6F538B6185638B2005A2237 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		C6F538C618563B1F005A2237 /* iframe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframe.html; sourceTree = "<group>"; };
+		C6F538C81856412D005A2237 /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoModel.h; path = ytwatchapp/VideoModel.h; sourceTree = "<group>"; };
+		C6F538C91856412D005A2237 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoModel.m; path = ytwatchapp/VideoModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6F5385918563127005A2237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F5386218563127005A2237 /* CoreGraphics.framework in Frameworks */,
+				C6F5386418563127005A2237 /* UIKit.framework in Frameworks */,
+				C6F5386018563127005A2237 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F5387D18563128005A2237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F5388218563128005A2237 /* XCTest.framework in Frameworks */,
+				C6F5388418563128005A2237 /* UIKit.framework in Frameworks */,
+				C6F5388318563128005A2237 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6F5385318563127005A2237 = {
+			isa = PBXGroup;
+			children = (
+				C6F538C81856412D005A2237 /* VideoModel.h */,
+				C6F538C91856412D005A2237 /* VideoModel.m */,
+				C6F538C618563B1F005A2237 /* iframe.html */,
+				C6F538C5185638B9005A2237 /* SDWebImage */,
+				C6F5389718563163005A2237 /* FeedModel.h */,
+				C6F5389818563163005A2237 /* FeedModel.m */,
+				C6F5386518563127005A2237 /* ytwatchapp */,
+				C6F5388718563128005A2237 /* ytwatchappTests */,
+				C6F5385E18563127005A2237 /* Frameworks */,
+				C6F5385D18563127005A2237 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6F5385D18563127005A2237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5385C18563127005A2237 /* ytwatchapp.app */,
+				C6F5388018563128005A2237 /* ytwatchappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6F5385E18563127005A2237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5385F18563127005A2237 /* Foundation.framework */,
+				C6F5386118563127005A2237 /* CoreGraphics.framework */,
+				C6F5386318563127005A2237 /* UIKit.framework */,
+				C6F5388118563128005A2237 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6F5386518563127005A2237 /* ytwatchapp */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5386E18563127005A2237 /* AppDelegate.h */,
+				C6F5386F18563127005A2237 /* AppDelegate.m */,
+				C6F5387118563127005A2237 /* Main.storyboard */,
+				C6F5387418563127005A2237 /* MasterViewController.h */,
+				C6F5387518563127005A2237 /* MasterViewController.m */,
+				C6F5387718563127005A2237 /* DetailViewController.h */,
+				C6F5387818563127005A2237 /* DetailViewController.m */,
+				C6F5387A18563128005A2237 /* Images.xcassets */,
+				C6F5386618563127005A2237 /* Supporting Files */,
+			);
+			path = ytwatchapp;
+			sourceTree = "<group>";
+		};
+		C6F5386618563127005A2237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5386718563127005A2237 /* ytwatchapp-Info.plist */,
+				C6F5386818563127005A2237 /* InfoPlist.strings */,
+				C6F5386B18563127005A2237 /* main.m */,
+				C6F5386D18563127005A2237 /* ytwatchapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6F5388718563128005A2237 /* ytwatchappTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5388D18563128005A2237 /* ytwatchappTests.m */,
+				C6F5388818563128005A2237 /* Supporting Files */,
+			);
+			path = ytwatchappTests;
+			sourceTree = "<group>";
+		};
+		C6F5388818563128005A2237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5388918563128005A2237 /* ytwatchappTests-Info.plist */,
+				C6F5388A18563128005A2237 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6F538C5185638B9005A2237 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5389A185638B2005A2237 /* MKAnnotationView+WebCache.h */,
+				C6F5389B185638B2005A2237 /* MKAnnotationView+WebCache.m */,
+				C6F5389C185638B2005A2237 /* NSData+GIF.h */,
+				C6F5389D185638B2005A2237 /* NSData+GIF.m */,
+				C6F5389E185638B2005A2237 /* SDImageCache.h */,
+				C6F5389F185638B2005A2237 /* SDImageCache.m */,
+				C6F538A0185638B2005A2237 /* SDWebImageCompat.h */,
+				C6F538A1185638B2005A2237 /* SDWebImageCompat.m */,
+				C6F538A2185638B2005A2237 /* SDWebImageDecoder.h */,
+				C6F538A3185638B2005A2237 /* SDWebImageDecoder.m */,
+				C6F538A4185638B2005A2237 /* SDWebImageDownloader.h */,
+				C6F538A5185638B2005A2237 /* SDWebImageDownloader.m */,
+				C6F538A6185638B2005A2237 /* SDWebImageDownloaderOperation.h */,
+				C6F538A7185638B2005A2237 /* SDWebImageDownloaderOperation.m */,
+				C6F538A8185638B2005A2237 /* SDWebImageManager.h */,
+				C6F538A9185638B2005A2237 /* SDWebImageManager.m */,
+				C6F538AA185638B2005A2237 /* SDWebImageOperation.h */,
+				C6F538AB185638B2005A2237 /* SDWebImagePrefetcher.h */,
+				C6F538AC185638B2005A2237 /* SDWebImagePrefetcher.m */,
+				C6F538AD185638B2005A2237 /* UIButton+WebCache.h */,
+				C6F538AE185638B2005A2237 /* UIButton+WebCache.m */,
+				C6F538AF185638B2005A2237 /* UIImage+GIF.h */,
+				C6F538B0185638B2005A2237 /* UIImage+GIF.m */,
+				C6F538B1185638B2005A2237 /* UIImage+MultiFormat.h */,
+				C6F538B2185638B2005A2237 /* UIImage+MultiFormat.m */,
+				C6F538B3185638B2005A2237 /* UIImage+WebP.h */,
+				C6F538B4185638B2005A2237 /* UIImage+WebP.m */,
+				C6F538B5185638B2005A2237 /* UIImageView+WebCache.h */,
+				C6F538B6185638B2005A2237 /* UIImageView+WebCache.m */,
+			);
+			name = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6F5385B18563127005A2237 /* ytwatchapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F5389118563128005A2237 /* Build configuration list for PBXNativeTarget "ytwatchapp" */;
+			buildPhases = (
+				C6F5385818563127005A2237 /* Sources */,
+				C6F5385918563127005A2237 /* Frameworks */,
+				C6F5385A18563127005A2237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ytwatchapp;
+			productName = ytwatchapp;
+			productReference = C6F5385C18563127005A2237 /* ytwatchapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6F5387F18563128005A2237 /* ytwatchappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F5389418563128005A2237 /* Build configuration list for PBXNativeTarget "ytwatchappTests" */;
+			buildPhases = (
+				C6F5387C18563128005A2237 /* Sources */,
+				C6F5387D18563128005A2237 /* Frameworks */,
+				C6F5387E18563128005A2237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6F5388618563128005A2237 /* PBXTargetDependency */,
+			);
+			name = ytwatchappTests;
+			productName = ytwatchappTests;
+			productReference = C6F5388018563128005A2237 /* ytwatchappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6F5385418563127005A2237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = runcode;
+				TargetAttributes = {
+					C6F5387F18563128005A2237 = {
+						TestTargetID = C6F5385B18563127005A2237;
+					};
+				};
+			};
+			buildConfigurationList = C6F5385718563127005A2237 /* Build configuration list for PBXProject "ytwatchapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6F5385318563127005A2237;
+			productRefGroup = C6F5385D18563127005A2237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6F5385B18563127005A2237 /* ytwatchapp */,
+				C6F5387F18563128005A2237 /* ytwatchappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6F5385A18563127005A2237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F5387B18563128005A2237 /* Images.xcassets in Resources */,
+				C6F5386A18563127005A2237 /* InfoPlist.strings in Resources */,
+				C6F538C718563B1F005A2237 /* iframe.html in Resources */,
+				C6F5387318563127005A2237 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F5387E18563128005A2237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F5388C18563128005A2237 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6F5385818563127005A2237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F5387018563127005A2237 /* AppDelegate.m in Sources */,
+				C6F538C3185638B2005A2237 /* UIImage+WebP.m in Sources */,
+				C6F538BF185638B2005A2237 /* SDWebImagePrefetcher.m in Sources */,
+				C6F5389918563163005A2237 /* FeedModel.m in Sources */,
+				C6F538BB185638B2005A2237 /* SDWebImageDecoder.m in Sources */,
+				C6F538BC185638B2005A2237 /* SDWebImageDownloader.m in Sources */,
+				C6F5387618563127005A2237 /* MasterViewController.m in Sources */,
+				C6F538BE185638B2005A2237 /* SDWebImageManager.m in Sources */,
+				C6F538C0185638B2005A2237 /* UIButton+WebCache.m in Sources */,
+				C6F538C2185638B2005A2237 /* UIImage+MultiFormat.m in Sources */,
+				C6F538C4185638B2005A2237 /* UIImageView+WebCache.m in Sources */,
+				C6F538CA1856412D005A2237 /* VideoModel.m in Sources */,
+				C6F5386C18563127005A2237 /* main.m in Sources */,
+				C6F538BD185638B2005A2237 /* SDWebImageDownloaderOperation.m in Sources */,
+				C6F538C1185638B2005A2237 /* UIImage+GIF.m in Sources */,
+				C6F538BA185638B2005A2237 /* SDWebImageCompat.m in Sources */,
+				C6F538B8185638B2005A2237 /* NSData+GIF.m in Sources */,
+				C6F5387918563127005A2237 /* DetailViewController.m in Sources */,
+				C6F538B7185638B2005A2237 /* MKAnnotationView+WebCache.m in Sources */,
+				C6F538B9185638B2005A2237 /* SDImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F5387C18563128005A2237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F5388E18563128005A2237 /* ytwatchappTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6F5388618563128005A2237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6F5385B18563127005A2237 /* ytwatchapp */;
+			targetProxy = C6F5388518563128005A2237 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6F5386818563127005A2237 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F5386918563127005A2237 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6F5387118563127005A2237 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F5387218563127005A2237 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6F5388A18563128005A2237 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6F5388B18563128005A2237 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6F5388F18563128005A2237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C6F5389018563128005A2237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6F5389218563128005A2237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ytwatchapp/ytwatchapp-Prefix.pch";
+				INFOPLIST_FILE = "ytwatchapp/ytwatchapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6F5389318563128005A2237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ytwatchapp/ytwatchapp-Prefix.pch";
+				INFOPLIST_FILE = "ytwatchapp/ytwatchapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C6F5389518563128005A2237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ytwatchapp.app/ytwatchapp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ytwatchapp/ytwatchapp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ytwatchappTests/ytwatchappTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C6F5389618563128005A2237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ytwatchapp.app/ytwatchapp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ytwatchapp/ytwatchapp-Prefix.pch";
+				INFOPLIST_FILE = "ytwatchappTests/ytwatchappTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6F5385718563127005A2237 /* Build configuration list for PBXProject "ytwatchapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F5388F18563128005A2237 /* Debug */,
+				C6F5389018563128005A2237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F5389118563128005A2237 /* Build configuration list for PBXNativeTarget "ytwatchapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F5389218563128005A2237 /* Debug */,
+				C6F5389318563128005A2237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6F5389418563128005A2237 /* Build configuration list for PBXNativeTarget "ytwatchappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F5389518563128005A2237 /* Debug */,
+				C6F5389618563128005A2237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6F5385418563127005A2237 /* Project object */;
+}
